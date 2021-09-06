@@ -1,0 +1,159 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: inherit;
+
+    background: radial-gradient(50% 50% at left top,rgba(80,165,220,0.3),transparent),
+                radial-gradient(50% 50% at right bottom,rgba(80,165,220,0.3),transparent),
+                radial-gradient(50% 50% at left bottom,rgba(255,84,64,0.2),transparent),
+                radial-gradient(50% 50% at right top,rgba(255,84,64,0.2),transparent),
+                #707070;
+}
+
+.container{
+    max-width: 380px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.field__title{
+    margin: 0 0 30px 0;
+
+    font-weight: 600;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+
+.field__title span:nth-child(1){
+    color: #50a5dc;
+}
+
+
+
+.field__title span:nth-child(2){
+    color: #ff5440;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    height: inherit;
+}
+
+.field__row{
+    display: flex;
+    justify-content: center;
+    
+    height: 120px;
+}
+
+.field__row:first-of-type .field__col{
+    border-top: 5px solid #000;
+}
+
+.field__row .field__col:first-child{
+    border-left: 5px solid #000;
+}
+
+.field__col{
+    position: relative;
+
+    width: 120px;
+
+    background-color: #D9DB65;
+
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+
+    box-shadow: none;
+
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.field__col:hover{
+    background-color: #eecc;
+
+    box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.field__col--x,.field__col--o{
+    background-image: url("../img/group.png");
+    background-repeat: no-repeat;
+}
+
+.field__col.field__col--x:hover, .field__col.field__col--o:hover{
+    background-color: #D9DB65;
+
+    box-shadow: none;
+}
+
+.field__offset--x{
+    background-position: 0 center;
+}
+
+.field__offset--o{
+    background-position: -120px center;
+}
+
+.field__col--win-0{
+    background-image: url("../img/line-horizontal.png");
+}
+
+.field__col--win-1{
+    background-image: url("../img/line-vert.png");
+}
+
+.field__col--win-2{
+    background-image: url("../img/lineTwoDiagonal.png");
+}
+
+.field__col--win-3{
+    background-image: url("../img/lineOneDiagonal.png");
+}
+
+.field__btn{
+    display: inline-block;
+    box-sizing: border-box;
+
+    width: 310px;
+
+    margin: 30px auto 0 auto;
+    padding: 10px 5px;
+
+    background-color: transparent;
+
+    border: 2px solid #000;
+
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    box-shadow: none;
+
+    transition: all 0.2s;
+}
+
+.field__btn:hover{
+    background-color: #eecc;
+
+    box-shadow: inset 0 0 5px 0 rgba(0,0,0,0.5);
+}
+
+
